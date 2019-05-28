@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/cc1590/CXAnyModel.git" , :tag => '0.0.1'}
+  spec.source       = { :git => "https://github.com/cc1590/CXAnyModel.git"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,7 +94,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "CXAnyModel", "CXAnyModel/**/*.{h,m}"
   # spec.exclude_files = "CXAnyModel/AnyBind"
 
-  spec.public_header_files = "CXAnyModel/CXAnyModelEntrance.h"
+  spec.public_header_files = "CXAnyModel/CXAnyModelEntrance.h", "CXAnyModel/AnyModel/CXAnyModel.h"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
