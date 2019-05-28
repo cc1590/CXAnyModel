@@ -7,6 +7,7 @@
 //
 
 #import "CXAnyModel.h"
+#import "CXAnyModelEntrance.h"
 
 @implementation CXAnyModel
 
