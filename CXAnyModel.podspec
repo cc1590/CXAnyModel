@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/cc1590/CXAnyModel.git" }
+  spec.source       = { :git => "https://github.com/cc1590/CXAnyModel.git" , :tag => '0.0.1'}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,8 +94,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "CXAnyModel", "CXAnyModel/**/*.{h,m}"
   # spec.exclude_files = "CXAnyModel/AnyBind"
 
-  spec.public_header_files = "CXAnyModel/AnyBind/CXAnyModelEntrance.h"
-
+  spec.public_header_files = "CXAnyModel/CXAnyModelEntrance.h"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

@@ -273,7 +273,7 @@ void anyModel_readyAllGetter(void)
                 NSValue *v = anyModel_getValueFromContainer(_self,_key,_containerKey);
                 if(v && [v isKindOfClass:NSValue.class]){
                     void **structPP = malloc(sizeof(void *));
-                    [v getValue:structPP size:sizeof(void *)];
+                    [v getValue:structPP];
                     void *structP = *structPP;
                     free(structPP);
                     return structP;

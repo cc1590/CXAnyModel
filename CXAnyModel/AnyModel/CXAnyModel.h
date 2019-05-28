@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CXAnyModelEntrance.h"
 
 @interface CXAnyModel : NSObject <CXAnyModelValues>
 
