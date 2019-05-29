@@ -110,3 +110,6 @@ CXAnyModelExtendedStruct(struct)
 struct填入结构体类型
 
 所有property现在都是默认nonatomic的
+
+# 版权说明
+该项目签署了Anti 996 授权许可(反996)，详情请参阅 LICENSE.md
