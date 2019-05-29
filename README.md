@@ -113,5 +113,7 @@ struct填入结构体类型
 
 # 版权说明
 [996icu](https://github.com/996icu/996.ICU)
+
 [![996.ICU](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+
 该项目签署了Anti 996 授权许可(反996)，详情请参阅 LICENSE.md
