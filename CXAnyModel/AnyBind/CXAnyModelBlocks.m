@@ -119,12 +119,6 @@ void anyModel_readyAllSetter(void)
         }) forKey:[NSString stringWithUTF8String:@encode(BOOL)]];
         
         [anyModel_allSetter setObject:({
-            ^(id _self,char value,NSString *_key,NSString *_containerKey){
-                anyModel_setValueToContainer(_self,_key,@(value),_containerKey);
-            };
-        }) forKey:[NSString stringWithUTF8String:@encode(char)]];
-        
-        [anyModel_allSetter setObject:({
             ^(id _self,IMP value,NSString *_key,NSString *_containerKey){
                 NSValue *v = [NSValue value:value withObjCType:@encode(IMP)];
                 anyModel_setValueToContainer(_self,_key,v,_containerKey);
@@ -137,6 +131,7 @@ void anyModel_readyAllSetter(void)
                 anyModel_setValueToContainer(_self,_key,v,_containerKey);
             };
         }) forKey:@"^{"];
+        [anyModel_allSetter setObject:[anyModel_allSetter objectForKey:@"^{"] forKey:[NSString stringWithUTF8String:@encode(char *)]];
         
         [anyModel_allSetter setObject:({
             ^(id _self,id value,NSString *_key,NSString *_containerKey){
@@ -249,13 +244,6 @@ void anyModel_readyAllGetter(void)
         
         [anyModel_allGetter setObject:({
             ^(id _self,NSString *_key,NSString *_containerKey){
-                NSNumber *num = anyModel_getValueFromContainer(_self,_key,_containerKey);
-                return num.charValue;
-            };
-        }) forKey:[NSString stringWithUTF8String:@encode(char)]];
-        
-        [anyModel_allGetter setObject:({
-            ^(id _self,NSString *_key,NSString *_containerKey){
                 NSValue *v = anyModel_getValueFromContainer(_self,_key,_containerKey);
                 if(v && [v isKindOfClass:NSValue.class]){
                     IMP imp;
@@ -283,6 +271,7 @@ void anyModel_readyAllGetter(void)
                 }
             };
         }) forKey:@"^{"];//结构体指针
+        [anyModel_allGetter setObject:[anyModel_allGetter objectForKey:@"^{"] forKey:[NSString stringWithUTF8String:@encode(char *)]];//char 指针
         
         [anyModel_allGetter setObject:({
             ^(id _self,NSString *_key,NSString *_containerKey){
