@@ -1,0 +1,16 @@
+PODS:
+  - CXAnyModel (0.0.1)
+
+DEPENDENCIES:
+  - CXAnyModel (~> 0.0.1)
+
+SPEC REPOS:
+  https://github.com/cc1590/CXSpecs.git:
+    - CXAnyModel
+
+SPEC CHECKSUMS:
+  CXAnyModel: 9960fb3004867205faad489c73080fb736efc533
+
+PODFILE CHECKSUM: 466d21586f3984873c1f74505675371741e03309
+
+COCOAPODS: 1.6.1

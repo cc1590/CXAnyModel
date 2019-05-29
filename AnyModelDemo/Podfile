@@ -1,0 +1,7 @@
+source 'https://github.com/cc1590/CXSpecs.git'
+
+platform :ios, '11.0'
+
+target 'AnyModelDemo' do
+pod 'CXAnyModel', '~> 0.0.1'
+end
