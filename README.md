@@ -30,11 +30,11 @@ extern BOOL registerAnyModelToClass(Class class,NSError **error);
 项目中默认绑定了CXAnymodel类作为原始model类，可以直接使用
 
 ### 属性声明
-anymodel中的property都是声明在protocol中
-支持property声明的protocol是CXAnyModelSerializationValue和CXAnyModelNormalValue
-目前这两个protocol使用中没有区别
-你需要定义一个新的protocol接入以上两种protocol中的任一个，在新的protocol中进行property声明
-然后你的model类接入此新的protocol即可拥有property
+anymodel中的property都是声明在protocol中，
+支持property声明的protocol是CXAnyModelSerializationValue和CXAnyModelNormalValue，
+目前这两个protocol使用中没有区别，
+你需要定义一个新的protocol接入以上两种protocol中的任一个，在新的protocol中进行property声明，
+然后你的model类接入此新的protocol即可拥有property。
 
 
 ```
