@@ -108,3 +108,5 @@ CGRect，CGPoint，CGSize，CGVector，NSRange，UIEdgeInsets，CMTime，CGAffin
 CXAnyModelExtendedStruct(struct)
 ```
 struct填入结构体类型
+
+所有property现在都是默认nonatomic的
